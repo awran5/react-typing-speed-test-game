@@ -607,8 +607,7 @@ button {
 }
 
 .list-item {
-	box-shadow: 1px 1px 5px rgba(51, 51, 51, 0.2);
-	background-color: #eee;
+	box-shadow: 1px 1px 3px rgba(51, 51, 51, 0.2);
 }
 
 @-webkit-keyframes flash {

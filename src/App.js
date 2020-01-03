@@ -141,7 +141,7 @@ const App = () => {
 								</p>
 
 								<div className="alert alert-danger" role="alert">
-									Just start typing and don't use <b>Backslash</b> to correct your mistakes. Your
+									Just start typing and don't use <b>backspace</b> to correct your mistakes. Your
 									mistakes will be marked in <u>Red</u> color and shown below the writing box. Good
 									luck!
 								</div>
@@ -190,9 +190,30 @@ const App = () => {
 							)}
 
 							<div className="p-4 mt-4 bg-dark text-light rounded lead" ref={outputRef} />
-							<hr className="mt-5" />
-							<div className="my-5 pt-3">
-								<h6 className="py-2">Typing Speed Meter</h6>
+
+							<h6 className="mt-5">Tip!</h6>
+							<ul>
+								<li>
+									Word Per Minute (WPM) is measured by calculating how many words you can type in 1
+									minute.
+								</li>
+								<li>Character Per Minute (CPM) calculates how many characters are typed per minute.</li>
+								<li>
+									The top typing speed was achieved by{' '}
+									<a
+										href="https://en.wikipedia.org/wiki/Typing#Alphanumeric_entry"
+										rel="noopener noreferrer"
+										target="_blank"
+									>
+										Stella Pajunas
+									</a>{' '}
+									in 1946, whereas Mrs. Barbara Blackburn has averaged 150 wpm in 50 minutes and her
+									top speed was 212 wpm.
+								</li>
+							</ul>
+							<hr className="my-4" />
+							<div className="mb-5">
+								<h6 className="py-2">Average Typing Speeds</h6>
 								<div className="d-flex text-white meter-gauge">
 									<span className="col" style={{ background: '#eb4841' }}>
 										0 - 20 Slow
