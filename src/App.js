@@ -226,7 +226,7 @@ const App = () => {
 							<li className="list-inline-item"> - </li>
 							<li className="list-inline-item">
 								<a
-									href="https://github.com/awran5/parvos/"
+									href="https://github.com/awran5/react-typing-speed-test-game"
 									target="_blank"
 									title="GitHub"
 									rel="noopener noreferrer"
@@ -237,7 +237,7 @@ const App = () => {
 							<li className="list-inline-item"> - </li>
 							<li className="list-inline-item">
 								<a
-									href="https://github.com/awran5/parvos/issues"
+									href="https://github.com/awran5/react-typing-speed-test-game/issues"
 									target="_blank"
 									title="Issues"
 									rel="noopener noreferrer"
