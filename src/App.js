@@ -135,17 +135,21 @@ const App = () => {
 						<div className="container">
 							<div className="text-center mt-4 header">
 								<h1>How Fast Can You Type?</h1>
-								<p className="lead">Start the one-minute Typing speed test and find out!</p>
-								<hr className="w-50" />
-								<p className="text-muted">
-									Just start typing and don't use <b>Backslash</b> to correct your mistakes. Good
-									luck!
+								<p className="lead">
+									Start the one-minute Typing speed test and find out how fast can you type in real
+									world!
 								</p>
+
+								<div className="alert alert-danger" role="alert">
+									Just start typing and don't use <b>Backslash</b> to correct your mistakes. Your
+									mistakes will be marked in <u>Red</u> color and shown below the writing box. Good
+									luck!
+								</div>
 
 								<div className="control my-5">
 									{ended ? (
 										<button
-											className="btn btn-circle btn-outline-danger"
+											className="btn btn-outline-danger btn-circle"
 											onClick={() => window.location.reload()}
 										>
 											Reload

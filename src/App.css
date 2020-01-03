@@ -54,7 +54,7 @@ h6 {
 }
 
 .bg-dark {
-	background-color: rgb(52, 58, 64) !important;
+	background-color: rgb(35, 38, 41) !important;
 }
 
 .container-fluid,
@@ -292,6 +292,27 @@ hr {
 	overflow: visible;
 }
 
+.alert-warning {
+	color: #856404;
+	background-color: #fff3cd;
+	border-color: #ffeeba;
+}
+.alert-danger {
+	color: rgb(185, 74, 72);
+	border: 1px solid rgb(238, 211, 215);
+	text-align: left;
+	width: 90%;
+	margin: 0 auto;
+	font-size: 14px;
+}
+
+.alert {
+	position: relative;
+	padding: .75rem 1.25rem;
+	margin-bottom: 1rem;
+	border-radius: .25rem;
+}
+
 .list-unstyled {
 	padding-left: 0px;
 	list-style: none;
@@ -397,8 +418,8 @@ button {
 
 .btn-outline-danger:hover {
 	color: #fff;
-	background-color: #dc3545;
-	border-color: #dc3545;
+	background-color: rgb(185, 74, 72);
+	border-color: rgb(185, 74, 72);
 }
 
 .btn-outline-danger:focus,
@@ -408,7 +429,7 @@ button {
 
 .btn-outline-danger.disabled,
 .btn-outline-danger:disabled {
-	color: #dc3545;
+	color: rgb(185, 74, 72);
 	background-color: transparent;
 }
 
@@ -416,8 +437,8 @@ button {
 .btn-outline-danger:not(:disabled):not(.disabled).active,
 .show > .btn-outline-danger.dropdown-toggle {
 	color: #fff;
-	background-color: #dc3545;
-	border-color: #dc3545;
+	background-color: rgb(185, 74, 72);
+	border-color: rgb(185, 74, 72);
 }
 
 .btn-outline-danger:not(:disabled):not(.disabled):active:focus,
@@ -471,15 +492,18 @@ button {
 }
 
 /* Custom */
-
 .btn-circle {
 	border-radius: 50%;
+	border-width: 2px;
 	width: 70px;
 	height: 70px;
 	padding: 0;
 	font-weight: bold;
 	position: relative;
 	animation: border-pulse 2s infinite;
+}
+.btn-circle:focus {
+	outline: 0;
 }
 
 @keyframes border-pulse {
@@ -566,13 +590,13 @@ button {
 .quotes.active::after {
 	content: '';
 	position: absolute;
-	width: 15px;
-	height: 4px;
+	width: 1.25rem;
+	height: .3rem;
 	background: #fff;
-	left: 19px;
+	left: 1.20rem;
 	top: 4.25rem;
-	-webkit-animation: flash .3s infinite;
-	animation: flash .3s infinite;
+	animation: flash .2s infinite;
+	-webkit-animation: flash .2s infinite;
 }
 
 .meter-gauge > span {
@@ -584,6 +608,7 @@ button {
 
 .list-item {
 	box-shadow: 1px 1px 5px rgba(51, 51, 51, 0.2);
+	background-color: #eee;
 }
 
 @-webkit-keyframes flash {
